@@ -72,12 +72,12 @@ Config.ATMs = {
 Follow these steps to set up the script on your ESX server:
 
 1. **Download the Files**: Download the script files from the provided source.
-2. **Copy to Server Resource Directory**: Place the `hw_storerobbery` folder in the server resource directory.
+2. **Copy to Server Resource Directory**: Place the `hw_advancedATMrobbery` folder in the server resource directory.
 3. **Update `server.cfg`**: Add the following line to your `server.cfg` file:
     ```cfg
-    start hw_storerobbery
+    start hw_advancedATMrobbery
     ```
-4. **Start Your Server**: Restart or start your ESX server to load the `hw_storerobbery` resource.
+4. **Start Your Server**: Restart or start your ESX server to load the `hw_advancedATMrobbery` resource.
 
 If help is needed, you can contact me via Discord. A link for that will be provided in the console upon restarting the script. Alternatively, you can search for HenkW00 on Google, GitHub, or CFX.
 
