@@ -15,6 +15,8 @@ This script provides a comprehensive Lua solution for advanced ATM robbery scena
 - [ox_inventory](https://github.com/overextended/ox_inventory)
 - [ox_lib](https://github.com/overextended/ox_lib)
 - [hw_utils](https://hw-scripts-store.tebex.io/package/6258214) (Free)
+- [cd_dispatch](https://codesign.pro/package/4206357) (Paid) → If set in config
+- [linden_outlawalert](https://github.com/thelindat/linden_outlawalert) (Free) → If set in config
 
 ## :white_check_mark: Configuration
 The configuration options are available in the `config.lua` file and include settings for mode selection, debug logs, localization, framework choice (ESX or QBCore), notification preferences, police involvement, cooldown management, hacking item definition, reward settings, and ATM locations.
