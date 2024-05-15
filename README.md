@@ -39,7 +39,7 @@ Config.LogTitle = 'ATM Robbery Logs' -- Title of the log
 Config.LogColor = 65280  -- A decimal representation of a hex color code (e.g., blue)
 
 Config.NotificationType = 'ox_lib'  -- Options: 'ox_lib', 'esx', 'qbcore'
-Config.NotificationDuration = 10000 -- Duration for notifications in milliseconds
+Config.NotificationDuration = 4500 -- Duration for notifications in milliseconds
 
 Config.PoliceJobs = {
     'police',
@@ -49,24 +49,29 @@ Config.PoliceJobs = {
 Config.PoliceRequired = 0 -- Required cops needed to be online
 Config.PoliceNotify = true -- Should police get notified?
 Config.PoliceBlip = true -- Should they get a blip where ATM is robbery?
+Config.DispatchType = 'linden'
 Config.AlertBlipTime = 30 -- seconds
 Config.AlarmTimer = 30000 -- milliseconds
 
 Config.ATMRobberyTime = 60 -- seconds
-Config.CooldownTime = 1 -- seconds (10 minutes)
-Config.GlobalCooldownTime = 600 -- seconds (10 minutes)
+Config.CooldownTime = 5 -- seconds = cooldown between crack and looting
+Config.GlobalCooldownTime = 600 -- seconds (10 minutes) = will  basicly disable script for 10 minutes
 
-Config.HackingItem = 'phone' -- The item required to hack the ATM
-Config.Reward = { min = 1000, max = 5000 }
-
-
-Config.ATMRobberyTime = 60 -- seconds
-Config.CooldownTime = 1 -- seconds (10 minutes)
-Config.GlobalCooldownTime = 600 -- seconds (10 minutes)
-
+Config.HackingItem = 'hack_phone' -- The item required to hack the ATM
+Config.Reward = { min = 10000, max = 18000 } -- Reward you get from looting a ATM
 
 Config.ATMs = {
     { model = 'prop_atm_03', coords = vector3(112.64, -819.49, 31.34) },  -- Add as many ATMs as needed
+}
+
+Config.Dealer = {
+    model = 's_m_m_highsec_01',
+    coords = vector3(345.5158, -993.6245, 28.3707),
+    heading = 245.0,
+    menu = {
+        { label = 'Buy Hacking Phone - $5000', value = 'hack_phone', price = 5000 },
+        { label = 'Buy Lockpick - $1000', value = 'lockpick', price = 1000 }
+    }
 }
 ```
 
